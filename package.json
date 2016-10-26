@@ -112,7 +112,7 @@
   "scripts": {
     "test": "gulp test",
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
-    "postinstall": "bower install",
+    "postinstall": "bower install && cp ./server/config/local.env.sample.js  ./server/config/local.env.js",
     "start": "node server"
   },
   "private": true
